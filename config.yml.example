@@ -4,15 +4,15 @@ global:
   # Relevant dataset paths, please use the ZFS dataset syntax such as: tank/apps
   dataset:
    # dataset for internal jail config files
-   config: tank/apps
+   config: bunzdata/apps
    # Media library dataset
-   media: tank/media
+   media: bunzdata/vault
    # Parent downloads dataset 
    # (is going to contain: Complete and Incomplete datasets for downloads)
-   downloads: tank/downloads
+   downloads: bunzdata/downloads
   jails:
    # jail version to install
-   version: 11.3-RELEASE
+   version: 12.0-RELEASE
    # Global pkgs to install in all jails.
    # Please use standard space delimited pkg install syntax.
    pkgs: curl ca_root_nss bash
