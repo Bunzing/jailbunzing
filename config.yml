@@ -26,48 +26,48 @@ jail:
   
   lidarr: 
     blueprint: lidarr
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.89/24
     gateway: 192.168.1.1
     
   sonarr: 
     blueprint: sonarr
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.88/24
     gateway: 192.168.1.1
     
   radarr: 
     blueprint: radarr
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.96/24
     gateway: 192.168.1.1
     
   kms: 
     blueprint: kms
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.95/24
     gateway: 192.168.1.1
   
   jackett: 
     blueprint: jackett
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.94/24
     gateway: 192.168.1.1
     
   organizr: 
     blueprint: organizr
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.93/24
     gateway: 192.168.1.1
     
   tautulli: 
     blueprint: tautulli
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.92/24
     gateway: 192.168.1.1
   
   transmission: 
     blueprint: transmission
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.91/24
     gateway: 192.168.1.1
   
   
   nextcloud: 
     blueprint: nextcloud
-    ip4_addr: 192.168.1.99/24
+    ip4_addr: 192.168.1.90/24
     gateway: 192.168.1.1
     time_zone: Europe/Amsterdam
     host_name: cloud.example.com
