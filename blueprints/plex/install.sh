@@ -10,10 +10,12 @@ cp "${SCRIPT_DIR}"/blueprints/plex/includes/FreeBSD.conf /mnt/"${global_dataset_
 
 # Check if datasets for media librarys exist, create them if they do not.
 # shellcheck disable=SC2154
-createmount "$1" "${global_dataset_media}" /mnt/media
-createmount "$1" "${global_dataset_media}"/movies /mnt/media/movies
-createmount "$1" "${global_dataset_media}"/music /mnt/media/music
-createmount "$1" "${global_dataset_media}"/shows /mnt/media/shows
+createmount "$1" "${global_dataset_media}" /mnt/bunzdata/vault
+createmount "$1" "${global_dataset_media}"/muziek /mnt/bunzdata/vault/muziek
+createmount "$1" "${global_dataset_media}"/video/series /mnt/bunzdata/vault/video/series
+createmount "$1" "${global_dataset_media}"/video/anime /mnt/bunzdata/vault/video/anime
+createmount "$1" "${global_dataset_media}"/video/films /mnt/bunzdata/vault/video/films
+
 
 # Create plex ramdisk if specified
 # shellcheck disable=SC2154

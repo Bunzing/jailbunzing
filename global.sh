@@ -24,9 +24,9 @@ parse_yaml() {
 
 # automatic update function
 gitupdate() {
-if [ "$(git config --get remote.origin.url)" = "https://github.com/Ornias1993/jailman" ]
+if [ "$(git config --get remote.origin.url)" = "https://github.com/bunzing/jailbunzing" ]
 then
-	echo "The repository has been moved, please reinstall using the new repository: jailmanager/jailman"
+	echo "The repository has been moved, please reinstall using the new repository: https://github.com/bunzing/jailbunzing"
 	exit 1
 fi
 if [ "$1" = "" ] || [ "$1" = "HEAD" ];
@@ -117,7 +117,7 @@ echo "Jail creation completed for ${1}"
 # $1 = jail name
 # $2 = Dataset
 # $3 = Target mountpoint
-# $4 = fstab prefernces
+# $4 = fstab preferences
 createmount() {
 	if [ -z "$2" ] ; then
 		echo "ERROR: No Dataset specified to create and/or mount"

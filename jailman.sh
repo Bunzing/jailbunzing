@@ -111,7 +111,7 @@ eval "$(parse_yaml config.yml)"
 
 # shellcheck disable=SC2154
 if [ "${global_version}" != "1.2" ]; then
-	echo "You are using old config.yml synatx."
+	echo "You are using old config.yml syntax."
 	echo "Please check the wiki for required changes"
 	exit 1
 fi
