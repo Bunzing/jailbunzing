@@ -56,7 +56,7 @@ jail:
     
   tautulli: 
     blueprint: tautulli
-    ip4_addr: 192.168.1.92/24
+    ip4_addr: 192.168.1.87/24
     gateway: 192.168.1.1
   
   transmission: 
@@ -64,6 +64,10 @@ jail:
     ip4_addr: 192.168.1.91/24
     gateway: 192.168.1.1
   
+  medusa:
+    blueprint: medusa
+    ip4_addr: 192.168.1.92/24
+    gateway: 192.168.1.1
   
   nextcloud: 
     blueprint: nextcloud

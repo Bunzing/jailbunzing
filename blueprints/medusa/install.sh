@@ -15,7 +15,7 @@ iocage exec "$1" "fetch https://github.com/Radarr/Radarr/releases/download/v0.2.
 iocage exec "$1" "tar -xzvf /usr/local/share/Radarr.develop.0.2.0.1480.linux.tar.gz -C /usr/local/share"
 iocage exec "$1" rm /usr/local/share/Radarr.develop.0.2.0.1480.linux.tar.gz
 iocage exec "$1" "pw user add radarr -c radarr -u 352 -d /nonexistent -s /usr/bin/nologin"
-iocage exec "$1" chown -R radarr:radarr /usr/local/share/Radarr /config
+iocage exec "$1" chown -R radarr:radarr /usr/local/share/medusa /config
 iocage exec "$1" mkdir /usr/local/etc/rc.d
 # shellcheck disable=SC2154
 cp "${SCRIPT_DIR}"/blueprints/radarr/includes/radarr.rc /mnt/"${global_dataset_iocage}"/jails/"$1"/root/usr/local/etc/rc.d/radarr
